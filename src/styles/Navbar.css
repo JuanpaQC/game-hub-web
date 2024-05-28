@@ -1,10 +1,37 @@
 /* src/styles/Navbar.css */
 .navbar {
-    background-color: #343a40;
+    background-color: #20232a; /* Color oscuro para el fondo */
     color: white;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 18px;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #6441a5; /* Un color púrpura, popular en temas de gaming */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover, button:focus {
+    background-color: #4834d4; /* Un poco más brillante para el hover */
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+    outline: none;
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Efecto de presión al hacer clic */
   }
   

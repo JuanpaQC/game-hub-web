@@ -1,6 +1,6 @@
 // src/components/GamePopup.js
 import React from 'react';
-import '../styles/GamePopup.css'; // Asumiendo que tienes estilos en este archivo
+import '../styles/GamePopup.css'; // Asegúrate de que este archivo tenga los estilos correctos
 
 function GamePopup({ game, onClose }) {
   if (!game) return null;
@@ -8,11 +8,15 @@ function GamePopup({ game, onClose }) {
   return (
     <div className="game-popup">
       <div className="popup-content">
-        <button onClick={onClose}>Cerrar</button>
+        <button className="close-button" onClick={onClose}>Cerrar</button>
         <h2>{game.title}</h2>
-        <img src={game.imageUrl} alt={game.title} />
-        <p>{game.description}</p>
-        {/* Más información como requisitos, precio, etc. */}
+        <img src={game.img} alt={game.title} />
+        {game.g2a_price && <p>G2A Price: {game.g2a_price}</p>}
+        {game.Steam_price && <p>Steam Price: {game.Steam_price}</p>}
+        {game.IG_price && <p>Instant Gaming Price: {game.IG_price}</p>}
+        {game.IG_discount && <p>Instant Gaming Discount: {game.IG_discount}</p>}
+        {game.metascore && <p>Metascore: {game.metascore}</p>}
+        {game.time && <p>Playtime: {game.time}</p>}
       </div>
     </div>
   );

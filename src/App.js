@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import GameContainer from './components/GameContainer';
 import GamePopup from './components/GamePopup';
-import './styles/App.css'; // Asegúrate de tener estilos básicos para App
+import './App.css'; // Asegúrate de tener estilos básicos para App
 
 function App() {
   const [selectedGame, setSelectedGame] = useState(null);

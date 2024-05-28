@@ -1,10 +1,9 @@
 // src/components/GameCard.js
 import React from 'react';
-import '../styles/GameCard.css'; // Asumiendo que tienes estilos en este archivo
 
-function GameCard({ game }) {
+function GameCard({ game, onClick }) {
   return (
-    <div className="game-card" onClick={() => console.log("Abrir popup para", game.title)}>
+    <div className="game-card" onClick={onClick}>
       <img src={game.imageUrl} alt={game.title} />
       <div className="game-info">
         <h3>{game.title}</h3>

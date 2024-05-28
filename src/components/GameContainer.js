@@ -1,9 +1,9 @@
 // src/components/GameContainer.js
 import React, { useState, useEffect } from 'react';
 import GameCard from './GameCard';
-import db from '../firebaseConfig'; // Asumiendo que configuras Firestore en este archivo
+import db from '../firebaseConfig';
 
-function GameContainer() {
+function GameContainer({ onGameClick }) {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function GameContainer() {
   return (
     <div className="game-container">
       {games.map(game => (
-        <GameCard key={game.id} game={game} />
+        <GameCard key={game.id} game={game} onClick={() => onGameClick(game)} />
       ))}
     </div>
   );

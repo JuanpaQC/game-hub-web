@@ -11,3 +11,9 @@
 .footer p {
   margin: 5px 0;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px; /* Ajusta el tamaño del texto en móvil */
+  }
+}

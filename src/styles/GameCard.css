@@ -26,3 +26,23 @@
   padding: 5px 10px;
   text-align: center; /* Centra el texto horizontalmente */
 }
+
+@media (max-width: 768px) {
+  .game-card {
+    width: calc(50% - 20px); /* Ajusta para 2 tarjetas por fila en tabletas */
+  }
+
+  .game-card h3 {
+    font-size: 16px; /* Ajusta el tamaño del texto en móvil */
+  }
+}
+
+@media (max-width: 480px) {
+  .game-card {
+    width: calc(100% - 20px); /* Ajusta para 1 tarjeta por fila en móviles */
+  }
+
+  .game-card h3 {
+    font-size: 14px; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+  }
+}

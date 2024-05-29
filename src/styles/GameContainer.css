@@ -21,9 +21,6 @@
     0 0 40px rgba(0, 0, 255, 0.6);   /* Sombra azul menos intensa y más lejana */
 }
 
-
-
-
 .game-container {
   background-color: rgb(21, 21, 21);
   display: flex;
@@ -41,9 +38,36 @@
   border: none;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 8px;
 }
 
 .load-more:hover {
   background-color: rgba(255, 255, 255, 0.5); /* Más claro al pasar el cursor */
   transform: scale(1.05); /* Un poco más grande al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+  .title1 {
+    font-size: 40px;
+  }
+
+  .game-container {
+    gap: 10px; /* Espacio entre las tarjetas en móvil */
+  }
+
+  .load-more {
+    width: 80%; /* Botón de cargar más más estrecho en móvil */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+}
+
+@media (max-width: 480px) {
+  .title1 {
+    font-size: 30px;
+  }
+
+  .load-more {
+    width: 90%; /* Botón de cargar más aún más estrecho en pantallas pequeñas */
+    border-radius: 12px; /* Más bordes redondeados */
+  }
 }

@@ -1,37 +1,70 @@
 /* src/styles/Navbar.css */
 .navbar {
-    background-color: #20232a; /* Color oscuro para el fondo */
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-  }
-  
-  .navbar h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    margin-left: 10px;
-    background-color: #6441a5; /* Un color púrpura, popular en temas de gaming */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  button:hover, button:focus {
-    background-color: #4834d4; /* Un poco más brillante para el hover */
-    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
-    outline: none;
-  }
-  
-  button:active {
-    transform: scale(0.95); /* Efecto de presión al hacer clic */
-  }
-  
+  background: linear-gradient(135deg, rgba(72, 61, 139, 0.8), rgba(0, 0, 255, 0.8));
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navbar-logo {
+  height: 75px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2); /* Color translúcido */
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3); /* Más claro al enfocar */
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.3); /* Color translúcido */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Más claro al pasar el cursor */
+  transform: scale(1.05); /* Un poco más grande al pasar el cursor */
+}
+
+button {
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05); /* Un poco más grande al pasar el cursor */
+}

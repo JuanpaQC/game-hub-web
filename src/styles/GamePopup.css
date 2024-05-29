@@ -12,9 +12,26 @@
   z-index: 1000;
 }
 
+.title {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-style: inherit;
+  text-shadow: 
+    0 0 10px rgba(72, 61, 139, 0.8), /* Sombra morada cercana */
+    0 0 20px rgba(72, 61, 139, 0.6), /* Sombra morada menos intensa y un poco más lejana */
+    0 0 30px rgba(0, 0, 255, 0.8),   /* Sombra azul intensa */
+    0 0 40px rgba(0, 0, 255, 0.6);   /* Sombra azul menos intensa y más lejana */
+}
+
+.p{
+  color: white;
+
+}
+
 .popup-content {
   position: relative; /* Importante para posicionar absolutamente el botón cerrar */
-  background: white;
+  background: rgb(54, 54, 54);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -29,7 +46,7 @@
   right: 20px;
   padding: 5px 10px;
   font-size: 16px;
-  background: #ff6347; /* Rojo tomate para el botón cerrar */
+  background: #3036e5; /* Rojo tomate para el botón cerrar */
   color: white;
   border: none;
   border-radius: 5px;
@@ -37,5 +54,6 @@
 }
 
 .popup-content .close-button:hover {
-  background: #e53e30; /* Un rojo más oscuro para hover */
+  background: #47bfff; /* Un rojo más oscuro para hover */
 }
+

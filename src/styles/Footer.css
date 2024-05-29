@@ -1,0 +1,13 @@
+/* src/styles/Footer.css */
+.footer {
+  background: linear-gradient(135deg, rgba(72, 61, 139, 0.8), rgba(0, 0, 255, 0.8));
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
